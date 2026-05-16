@@ -4,51 +4,64 @@ body{
     font-family: sans-serif;
     background-color: rgb(12, 9, 41);
     padding-bottom: 5rem;
-  }
-  
-  h1,
-  h2 {
-    color: black;
-    padding: 0rem 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Arial", cursive;
-    letter-spacing: 1px;
-  }
+}
 
-  p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    letter-spacing: 1.4px;
-    word-spacing: 2px;
-    color: #000000;
-    font-weight: normal;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-  }
+h1,
+h2 {
+  color: black;
+  padding: 0rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Arial", cursive;
+  letter-spacing: 1px;
+}
 
-  label {
-    font-family: arial, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 3.2pt;
-    word-spacing: 3.8pt;
-    color: black;
-  }
-  input[type="date"] {
-    height: 38px;
-    padding: 6px 10px;
-    background-color: #fff;
-    border: 1px solid #d1d1d1;
-    border-radius: 4px;
-    box-shadow: none;
-    box-sizing: border-box;
-  }
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+}
 
-  input[type="submit"] {
-    padding-top: 2rem 0;
+label {
+  display:block;
+  margin-top:10px;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+input[type="date"],
+input[type="number"],
+input[type="text"] {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: calc(100% - 28px);
+}
+
+input[type="submit"] {
+  background-color:#59c4eb;
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:black;
+  font-family:Arial;
+  font-size:20px;
+  padding:13px 32px;
+  border: none;
+  margin-top: 12px;
+}
+
+button{
     background-color:#59c4eb;
     border-radius:8px;
     display:inline-block;
@@ -57,62 +70,45 @@ body{
     font-family:Arial;
     font-size:20px;
     padding:13px 32px;
-  }
+}
 
-  input {
-    height: 38px;
-    padding: 6px 10px;
-    background-color: #fff;
-    border: 1px solid #d1d1d1;
-    border-radius: 4px;
-    box-shadow: none;
-    box-sizing: border-box;
-  }
-  
-  button{
-      background-color:#59c4eb;
-      border-radius:8px;
-      display:inline-block;
-      cursor:pointer;
-      color:black;
-      font-family:Arial;
-      font-size:20px;
-      padding:13px 32px;
-  }
-  
-  .dive {
-    height:580px;
-    width: 800px;
-    border: 5px solid #FFFFFF;
-    border-radius: 10px;
-    background-color: white;
-    margin-top: 2rem;
-    margin-left: 19rem;
-  }
+.dive {
+  max-width: 800px;
+  padding: 20px;
+  border: 5px solid #FFFFFF;
+  border-radius: 10px;
+  background-color: white;
+  margin: 2rem auto;
+}
 
-  .dive2 {
-    height:580px;
-    width: 800px;
-    border: 5px solid #FFFFFF;
-    border-radius: 10px;
-    background-color: white;
-    margin-top: 2rem;
-    margin-left: 19rem;
-  }
-    
-  #popUpBox{
-    width: 500px;
-    overflow: hidden;
-    background: rgb(255, 243, 243);
-    border-color: black;
-    box-shadow: 0 0 10px black;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    padding: 10px;
-    text-align: center;
-    display: none;
-  }
+#popUpBox{
+  width: 500px;
+  overflow: hidden;
+  background: rgb(255, 243, 243);
+  border-color: black;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+#popUpOverlay {
+  position: fixed; inset:0; background: rgba(0,0,0,0.6);
+  display: none; z-index:9998;
+}
+
+.result-box {
+  border: 2px solid #e74c3c;
+  padding: 12px;
+  display: inline-block;
+  text-align: left;
+  margin: 10px 0;
+  background: #fff;
+}
+.result-box p { margin:6px 0; }
