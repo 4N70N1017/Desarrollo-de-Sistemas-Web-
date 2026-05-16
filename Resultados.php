@@ -6,6 +6,6 @@
     <body>
         <h1>¡Resultados de la encuesta!</h1>
         <img src="yes.jpg">
-        <h2>¡Bien hecho, Continua haci!</h2>
+        <h2>¡Bien hecho, Continua asi!</h2>
      </body>    
 </html>
